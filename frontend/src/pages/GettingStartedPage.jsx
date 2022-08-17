@@ -7,14 +7,13 @@ const GettingStartedPage = () => {
     const navigate = useNavigate();
 
     const handleSkip = () => {
-        navigate('/home')
+        navigate('/wallet')
     }
     return (
         <Box
             display='flex'
             flexDirection='column'
-            justifyContent='center'
-            sx={{ backgroundColor: 'background.default'}}>
+            justifyContent='center'>
             <Box display='flex' justifyContent='flex-end' m={3}>
                 <Button variant='text' onClick={handleSkip}>
                     <Typography color='text.primary'>Skip</Typography>
